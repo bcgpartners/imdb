@@ -1,4 +1,4 @@
-# Top Movie Ratings from IMDB
+# Top 20 Movies By Ratings
 Files are downloaded and processed from IMDB site https://datasets.imdbws.com/
 Scores are calculated using *(numVotes/averageNumberOfVotes) * averageRating*
 
