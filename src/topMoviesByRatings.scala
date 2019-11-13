@@ -10,6 +10,12 @@ object topMoviesByRatings {
 
     //Data Location
     val dataDir = args(0)
+    
+    //Valid location check
+    if (!scala.reflect.io.File(dataDir).exists) {
+      println("FAILED: No such directory "+dataDir)
+      System.exit(1)
+    }
 
     val sc = new SparkContext(new SparkConf())
 
